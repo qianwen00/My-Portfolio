@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    
+    <!-- This is the menu section -->
+	<div id="menu">
+		<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="photography.html">Photography</a></li> 
+		<li><a href="movie.html">Top Movie Picks</a></li>
+		<li><a href="sourcelog.html">Source Log</a></li>
+		<li><a href="about-my-site.html">About My Site</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li class="special-button"><a href="feedback.html">Give Me Some Advice</a></li>
+		</ul>
+	</div>
+    
+    <h1>Feedback Form</h1>
+    <form action="mailto:u7726387@anu.edu.au" method="post" enctype="text/plain">
+        <label for="name">Your name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Your email</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label>What is your gender?</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+        <input type="radio" id="prefer-not-to-say" name="gender" value="Prefer not to say">
+        <label for="prefer-not-to-say">I prefer not to say</label><br>
+        
+        <label for="website-feedback">What do you think of this website?</label><br>
+        <textarea id="website-feedback" name="website-feedback" rows="4" cols="50"></textarea><br>
+        
+        <label for="favourite-part">What was your favourite part of this website?</label><br>
+        <textarea id="favourite-part" name="favourite-part" rows="4" cols="50"></textarea><br>
+        
+        <label for="biggest-problems">Regarding this website, which part do you think has the biggest problems?</label><br>
+        <textarea id="biggest-problems" name="biggest-problems" rows="4" cols="50"></textarea><br>
+        
+        <input type="submit" value="Send it">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>

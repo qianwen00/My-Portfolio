@@ -1,0 +1,311 @@
+/*font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+@font-face {
+    font-family: 'night2';
+    src: url('fonts/NightDriver-q22yx.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'cyber';
+    src: url('fonts/CyberBrush-MAA2x.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* use black background */
+body {
+    background-color: #000000;
+    /* background-image: url('Images/bg_black1.jpg');   */
+    background-repeat: repeat;
+}
+
+#menu {
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	background:rgba(255,255,255, 0.5); /* 白色背景，50%透明度 */
+	padding: 10px 0; 
+  }
+  
+  #menu ul {
+	list-style: none; 
+	padding: 0; 
+	margin: 0; 
+	display: flex;
+	width: 100%; 
+  }
+  
+
+  
+  #menu li {
+	margin: 0 20px; 
+	display: flex; 
+  }
+  
+  #menu a {
+	text-decoration: none; 
+	color: #f5f1ef; 
+	font-weight: 350; 
+	font-size: 16px; 
+	padding: 5px 0; 
+  }
+  
+  /* special */
+  #menu .special-button {
+	margin-left: auto; 
+	padding: 8px 20px; 
+	border-radius: 20px; 
+	margin-top: -9px; 
+  }
+  
+  #menu .special-button a {
+	border: 1px solid #f5f1ef; 
+	display: block; 
+	padding-left: 1em; 
+  	padding-right: 1em; 
+  }
+
+
+  #Top{
+    font-family: 'night2', sans-serif;
+    font-size: 100px; 
+    font-weight: 500; 
+    color: #ffffff;
+    text-align: center;
+    margin-top: 1em;
+    letter-spacing: 0.05em; /* Increase word spacing */
+    text-shadow: 1px 1px 2px #000000;
+    
+  }
+
+  #introduction_movie{
+	font-family: 'Raleway', sans-serif;
+    font-weight: 250; 
+	font-size: 18px; 
+    color: #e7e1df;
+    text-align: center;
+	margin-top: 1em;
+  }
+
+  /* This is the rotating animation */
+
+
+  .wrapper {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    
+  }
+
+  #rotate_dna {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    transform: translateX(15px); /* 向右移动20像素 */
+  }
+  
+
+  .dna{
+    width:400px;
+    perspective:400px;
+    transform-style: preserve-3d;
+    
+  }
+
+  span{
+    position: relative;
+    color:#e7e1df;
+    width:10px;
+    height:120px;
+    float:left;
+    margin:0 8px;
+    transform:rotateX(-360deg);
+    animation:run 2.5s linear infinite;
+    animation-delay: calc(00.15s*var(--i));
+  }
+  span::before,
+  span::after{
+    position: absolute;
+    content:attr(data-txt);
+    font-family: 'cyber', sans-serif;
+    font-size: 26px;
+    left:50%;
+    text-shadow: 1px 1px 2px #000000;
+    transform:translateX(-50%);
+  }
+
+  span::before{
+    top:-2px;
+  }
+  span:after{
+    bottom:-2px;
+  }
+  @keyframes run{
+    to{
+        transform: none;
+    }
+  }
+
+
+
+  #sci{
+    font-family: 'night2', sans-serif;
+    font-size: 85px; 
+    font-weight: 500; 
+    color: #0c48d3;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 1.2em;
+  }
+
+  #romance{
+    font-family: 'night2', sans-serif;
+    font-size: 85px; 
+    font-weight: 500; 
+    color: #d7240d;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 1.2em;
+  }
+
+
+
+/* 通用电影标题样式 */
+.movie-title {
+  font-family: 'cyber', sans-serif;
+  font-size: 49px; 
+  font-weight: 350; 
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000000;
+  margin-top: 45px;
+}
+
+/* 通用电影介绍样式 */
+.movie-intro {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 250; 
+  font-size: 18px; 
+  color: #e7e1df;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.container {
+  display: flex;         /* 使用 flexbox 布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中，如果您也需要垂直居中的话 */
+  flex-direction: column;  /* 子元素垂直排列 */
+  width: 100%;            /* 容器宽度 */
+  min-height: 50vh;      /* 容器至少占满整个视窗高度 */
+}
+
+.container video {
+  width: 100%;           /* 视频宽度为容器宽度的100% */
+  max-width: 891px;      
+  height: auto;          /* 高度自动，保持视频的原始宽高比 */
+}
+
+.video-credit {
+  font-family: 'Raleway', sans-serif;
+  text-align: center; /* 使文字居中 */
+  color: #ffffff; /* 设定文字颜色，您可以选择适合您网站的颜色 */
+  font-size: 20px; /* 设置字体大小 */
+  margin-top: 15px; /* 在视频和文字间添加一点间距 */
+  font-style: italic; /* 可选：使用斜体表示这是注释或额外的说明 */
+}
+
+
+
+/* 通用图片容器样式 */
+.container img {
+  width: 100%;          
+  height: auto;         
+  display: block;       
+  margin: 0 auto;       
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1); 
+}
+
+.movie-poster {
+  width: 891px;
+  height: 486px;
+  position: relative;
+}
+
+
+.container .prev-btn, .container .next-btn {
+  position: absolute;
+  top: 50%; /* Position buttons in the middle vertically */
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(34, 34, 34, 0.2);
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+.container .prev-btn {
+  left: 10px; /* Position to the left */
+}
+
+.container .next-btn {
+  right: 10px; /* Position to the right */
+}
+
+
+.movie-poster-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none; /* Hide all images initially */
+}
+
+.movie-poster-img:first-child {
+  display: block; /* Show only the first image initially */
+}
+
+/* 通用电影引用样式 */
+.movie-quotes {
+  font-family: 'night2', sans-serif;
+  font-size: 36px; 
+  font-weight: 280; 
+  color: #dcdcdf;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+
+/* sitemap */
+footer {
+	padding: 36px; 
+    text-align: center; 
+}
+
+.sitemap-link {
+  font-family: 'night2', sans-serif;
+    color: #ffffff; 
+    text-decoration: none; /* delete__ */
+	font-size: 40px;
+}
+
+
+  
+
+
+
+

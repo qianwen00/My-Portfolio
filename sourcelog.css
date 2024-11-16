@@ -1,0 +1,53 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-bottom: 50px;
+    text-align: center; 
+    background-color: #282826; 
+    color: white; 
+    padding: 20px; 
+    margin-top: 0; 
+}
+
+table {
+    width: 80%; 
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    border: 2px solid #282826; 
+    table-layout: fixed; 
+}
+
+caption {
+    font-style: italic; 
+    color: #282826;
+    font-size: 13px; 
+    margin-bottom: 10px; 
+}
+
+th {
+    background-color: #282826; 
+    color: white; 
+    padding: 10px; 
+}
+
+td {
+    padding: 10px; 
+    border: 1px solid #282826;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0; 
+}
+
+/* Scrollbar for narrow screens */
+@media screen and (max-width: 800px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}

@@ -1,0 +1,53 @@
+h1{
+    font-family: 'Raleway', sans-serif;
+}
+form {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f0f0f0; 
+    border: 2px solid #372402;
+    border-radius: 5px;
+    padding: 20px;
+    width: auto; 
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px; 
+}
+
+input[type="text"],
+textarea, 
+input[type="email"], /* Added email type if you will use it */
+input[type="radio"] { /* Apply some width control to radios */
+    width: 100%;
+    margin-bottom: 10px; 
+    padding: 5px; 
+    box-sizing: border-box; /* Include padding in the width */
+    border: 1px solid #ccc; 
+}
+
+/* This will stop radio buttons from taking full width */
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px; /* Space between radio and label */
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #888; 
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: rgb(184, 191, 194);
+    color: #333; 
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer; 
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #fbeccd; /* Lighten on hover for submit, darken for reset */
+}

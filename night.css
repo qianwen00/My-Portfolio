@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body{
+	background-color: #181002;
+	flex: 1 0 auto;
+}
+
+#welcome{
+  font-family: 'Raleway', sans-serif;
+  font-size: 80px; 
+  font-weight: 750; 
+  color: #f1ebe9;
+  text-align: center;
+  margin-top: 2em;
+}
+
+/* menu part */
+
+#menu {
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	background: #f9f7f3; 
+	padding: 10px 0; 
+}
+  
+
+  #menu ul {
+	list-style: none; 
+	padding: 0; 
+	margin: 0; 
+	display: flex;
+	width: 100%; 
+  }
+  
+  
+  #menu li {
+	margin: 0 20px; 
+	display: flex; 
+  }
+  
+  #menu a {
+	text-decoration: none; 
+	color: #333; 
+	font-weight: 330; 
+	font-size: 16px; 
+	padding: 5px 0; 
+  }
+  
+  /* special */
+  #menu .special-button {
+	margin-left: auto; 
+	padding: 8px 20px; 
+	border-radius: 20px; 
+	margin-top: -9px; 
+  }
+  
+  #menu .special-button a {
+	border: 1px solid #333; 
+	display: block; 
+	padding-left: 1em; 
+  	padding-right: 1em; 
+  }
+
+
+  /* ---------index main page--------- */
+
+  #topic{
+	font-family: 'Raleway', sans-serif;
+    font-weight: 250; 
+	font-size: 19px; 
+    color: #f1ebe9;
+    text-align: center;
+	margin-top: 1em;
+  }
+
+  .view-gallery-btn {
+    display: block; 
+    padding: 16px 20px;
+    margin: 80px auto; 
+	width: auto; 
+    max-width: 350px;
+    background-color: #47403a; 
+    color: white!important;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-decoration: none; /* delete__ */
+	border-radius: 3px; /* 圆角边框 */
+    transition: background-color 0.3s; /* transition animation*/
+}
+
+
+.view-gallery-btn:hover {
+    background-color: #39220c; /* Change color on mouseover */
+}
+
+
+  /* -------about my site part------- */
+
+  #about{
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px; 
+    font-weight: 750; 
+    color: #e0d9d7;
+    text-align: center;
+    margin-top: 2em;
+  }
+  
+    #about-section {
+      display: flex;
+      align-items: flex-start;
+      padding: 20px;
+  }
+  
+  
+  #about-content, #about-illustration {
+      flex: 1;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;  
+      font-size: 21px;
+      color: #e0d9d7;
+      margin-top: 1em;
+  }
+  
+  
+  #about-illustration {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #about-illustration img {
+      max-width: 70%;
+      height: auto;
+  }
+  
+  
+  @media (max-width: 768px) {
+    #about-section {
+        flex-direction: column;
+    }
+  
+    #about-content, #about-illustration {
+        flex: none;
+        width: 100%; /* Each takes the full width of the screen */
+    }
+  
+    #about-illustration img {
+        max-width: 70%;
+        margin: 0 auto; /* Center the image */
+    }
+  }
+  
+
+/* -------contact part-------- */
+
+
+  #contact {
+    font-family: 'Raleway', sans-serif;
+    font-size: 69px;
+    font-weight: 750;
+    color: #f1ebe9;
+    text-align: left;
+    margin-top: 2em;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+.cursor {
+    animation: blink 0.7s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+#email{
+  font-family: 'Raleway', sans-serif;
+    font-weight: 380; 
+	font-size: 28px; 
+    color: #f1ebe9;
+    text-align: left;
+	margin-top: 3em;
+  margin-left: 20px;
+
+}
+.content-container {
+  display: flex;        /* 使用Flexbox */
+  align-items: center;  /* 垂直居中对齐内容 */
+  justify-content: space-around; /* 内容之间保持平均间距 */
+}
+
+.text-content {
+  max-width: 60%; /* 限制文本占比，根据需要调整 */
+}
+
+.side-image {
+  max-width: 32%; /* 图片宽度，根据需要调整 */
+  height: auto;   /* 保持图片的宽高比 */
+  margin-top: 60px;
+}
+
+
+/* 给链接添加左边距，稍微向右移动 logo */
+a.facebook-link {
+  display: inline-block; /* 保持链接的内联块特性，让 margin-left 生效 */
+  margin-left: 20px; /* 向右移动 20px，可以根据需要调整这个值 */
+}
+
+.facebook-logo {
+  width: 50px; /* 设置 logo 的宽度 */
+  height: auto; /* 保持图片的纵横比 */
+}
+
+/* -------sourcelog part starts here------- */
+.cbody {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-bottom: 50px;
+  text-align: center; 
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+  color: #f1ebe9; 
+  margin-top: 20px; 
+}
+
+table {
+  width: 80%; /* Slightly increased width for less cramped appearance */
+  margin: 20px auto; /* Increased margin for better layout */
+  border-collapse: collapse; /* Using collapse to keep the borders neat */
+  border: 2px solid #282826; /* Keeping the original border color */
+  table-layout: fixed;
+}
+
+caption {
+  font-style: italic;
+  color: #f1ebe9; /* Retaining the original caption color */
+  font-size: 13px; /* Increased font size for better readability */
+  margin-bottom: 10px; /* Increased bottom margin for spacing */
+}
+
+th {
+  background-color: #282826; /* Dark background for headers */
+  color: white; /* Light text for contrast */
+  padding: 10px; /* Increased padding for comfort */
+  font-size: 16px; /* Uniform font size for headers */
+  font-weight: bold; /* Bold font weight for emphasis */
+}
+
+td {
+  padding: 15px; /* Uniform padding for all cells for better readability */
+  border: 1px solid #282826; /* Retaining the original border color */
+  color: #f1ebe9; /* Slightly lighter text color for readability */
+  text-align: center; /* Center alignment for all cell contents */
+}
+
+tbody tr:hover {
+  background-color: #444; /* Darker shade for hover for better visibility */
+}
+
+a {
+  color: #c7b198; /* Neutral link color retained */
+  text-decoration: none; /* No underline to keep it clean */
+}
+
+a:hover {
+  color: #ffffff; /* White color on hover for visibility */
+  text-decoration: underline; /* Underline on hover for emphasis */
+}
+
+a:visited {
+  color: #b4b0a7; /* Slightly darker shade for visited links */
+}
+
+/* Scrollbar for narrow screens */
+@media screen and (max-width: 800px) {
+  table {
+    display: block;
+    overflow-x: auto; /* Allows scrolling on smaller screens */
+  }
+}
+/* -------sourcelog part ends here------- */
+
+
+
+
+
+
+/* --------------------site map--------------- */
+
+
+footer {
+	padding: 36px; 
+    text-align: center; 
+}
+
+.sitemap-link {
+    color: #f1ebe9; 
+    text-decoration: none; /* delete__ */
+    font-weight: bold; 
+	font-size: 16px;
+}
+
+.sitemap-link:hover {
+    text-decoration: underline; 
+}
+
+  
